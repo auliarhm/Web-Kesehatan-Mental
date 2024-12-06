@@ -1,0 +1,382 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MindEase - MentallHealth Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .video-item {
+            margin-bottom: 20px;
+        }
+        .no-results {
+            display: none;
+            text-align: center;
+            color: red;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid py-2 border-bottom d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"></i>085728035007</a>
+                        <span class="text-body">|</span>
+                        <a class="text-decoration-none text-body px-3" href=""><i class="bi bi-envelope me-2"></i>mindease@google.com</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-body ps-2" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top bg-white shadow-sm mb-5">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>MindEase</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">Mental Test</a>
+                        <a href="service.html" class="nav-item nav-link active">Video</a>
+                        <a href="price.html" class="nav-item nav-link">Artikel</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+   
+
+    <div class="container my-4">
+        <input id="searchBar" type="text" class="form-control" placeholder="Search videos by title...">
+    </div>
+
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Mental Health Videos</h5>
+            <h1 class="display-4">Empowering Your Mind Through Video Insights</h1>
+        </div>
+
+
+    <!-- Video List -->
+    <div class="container">
+        <div id="videoContainer" class="row">
+            <div class="col-lg-4 col-md-6 video-item" data-title="Understanding Mental Health">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/wSlNwaK-DvI" allowfullscreen></iframe>
+                <h5 class="mt-3">Understanding Mental Health</h5>
+                <p>Learn the basics of mental health and why it's essential to maintain emotional well-being.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 video-item" data-title="Tips to Reduce Anxiety">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/xGb4fvfZpWM" allowfullscreen></iframe>
+                <h5 class="mt-3">Tips to Reduce Anxiety</h5>
+                <p>Discover practical techniques to manage anxiety and build resilience in daily life.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 video-item" data-title="Managing Stress in the Workplace">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/IDPDEKtd2yM?si=d3q3q0MUayARa36d" allowfullscreen></iframe>
+                <h5 class="mt-3">Managing Stress in the Workplace</h5>
+                <p>Explore strategies to cope with stress effectively in a professional setting.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 video-item" data-title="3 Signs of Burnout | It's NOT Laziness">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/U5O7wQhhujw?si=ILw-RF9XBpiHctN9" allowfullscreen></iframe>
+                <h5 class="mt-3">3 Signs of Burnout | It's NOT Laziness</h5>
+                <p>Identify the warning signs of burnout and strategies...</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 video-item" data-title="How to Build Emotional Resilience">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/_9Jz135bNOY?si=SYzyr04bAYVfWgmq" allowfullscreen></iframe>
+                <h5 class="mt-3">How to Build Emotional Resilience</h5>
+                <p>Explore ways to strengthen your emotional resilience and cope with life's challenges effectively.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 video-item" data-title="Mindfulness Meditation for Beginners">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/vj0JDwQLof4?si=YGK_KtyO0ff6jxgN" allowfullscreen></iframe>
+                <h5 class="mt-3">Mindfulness Meditation for Beginners</h5>
+                <p>Learn simple mindfulness meditation techniques to improve...</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 video-item" data-title="Sleep and Mental Health">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/236eHGCSPvI?si=0vVQIAJc1H5tmrs9" allowfullscreen></iframe>
+                <h5 class="mt-3">Sleep and Mental Health</h5>
+                <p>Discover the connection between sleep and mental health, and how...</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 video-item" data-title="Managing Stress at Work">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/XqFzXUsC6rE?si=tAXnWTEypsLEc6SI" allowfullscreen></iframe>
+                <h5 class="mt-3">Managing Stress at Work</h5>
+                <p>Understand the sources of workplace stress and tips to manage it effectively.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 video-item" data-title="The Power of Gratitude">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/gQ0nLHIAC94?si=OdYGtKgDOGltKgCo"allowfullscreen></iframe>
+                <h5 class="mt-3">The Power of Gratitude</h5>
+                <p>Learn how practicing gratitude can transform your mental health and overall outlook on life.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 video-item" data-title="Overcoming Anxiety">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/A1anXJhVamc?si=3h4C-XpeDK76NGR-" allowfullscreen></iframe>
+                <h5 class="mt-3">Overcoming Anxiety</h5>
+                <p>Tips and strategies for coping with anxiety and finding calm in everyday life.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 video-item" data-title="Breaking the Stigma of Mental Illness">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/KOffyiEH7nI?si=5VfPLHbMdHc6e7i9" allowfullscreen></iframe>
+                <h5 class="mt-3">Breaking the Stigma of Mental Illness</h5>
+                <p>How to fight mental health stigma to create a supportive and inclusive environment.</p>
+            </div>
+
+             <div class="col-lg-4 col-md-6 video-item" data-title="The Science of Happiness">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/6Gpxjeq2CJ8?si=R-nPUowN6ccxAOEp" allowfullscreen></iframe>
+                <h5 class="mt-3">The Science of Happiness</h5>
+                <p>Understand the science behind happiness and how to create it in your life.</p>
+            </div>
+
+             <div class="col-lg-4 col-md-6 video-item" data-title="Self-Care for Mental Health">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/3QIfkeA6HBY?si=PUSobeaWI5RlJ-UN" allowfullscreen></iframe>
+                <h5 class="mt-3">Self-Care for Mental Health</h5>
+                <p>Practical steps to take care of your mental health every day.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 video-item" data-title="Building Resilience in Tough Times">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/VNCL1glwyOI?si=8jaxjImvROgQW0DI" allowfullscreen></iframe>
+                <h5 class="mt-3">Building Resilience in Tough Times</h5>
+                <p>A practical guide to developing mental and emotional resilience when facing life's challenges.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 video-item" data-title="The Role of Exercise in Mental Health">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/fRDccGSLE9k?si=C56t0pOntkeZ0ry7" allowfullscreen></iframe>
+                <h5 class="mt-3">The Role of Exercise in Mental Health</h5>
+                <p>How physical activity can improve mood and reduce stress.</p>
+            </div>
+
+             <div class="col-lg-4 col-md-6 video-item" data-title="How to Support a Friend in Crisis">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/wIUcc8g17wg?si=b-evOBfzwtw95wWl" allowfullscreen></iframe>
+                <h5 class="mt-3">How to Support a Friend in Crisis</h5>
+                <p>A guide to helping friends who are facing a mental crisis in the right way.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 video-item" data-title="Understanding Bipolar Disorder">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/U8FL8h7CeaY?si=lTqxlnCuJSwRKKjY" allowfullscreen></iframe>
+                <h5 class="mt-3">Understanding Bipolar Disorder</h5>
+                <p>An explanation of bipolar disorder and how to recognize it in yourself or others.</p>
+            </div>
+
+             <div class="col-lg-4 col-md-6 video-item" data-title="Overcoming Social Anxiety">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/71PlY4ENmAk?si=b7X7QPcKTy0u-2MT" allowfullscreen></iframe>
+                <h5 class="mt-3">Overcoming Social Anxiety</h5>
+                <p>Steps to overcome social anxiety and build confidence in social settings.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 video-item" data-title="Positive Thinking for Mental Well-Being">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/HwLK9dBQn0g?si=AkQ00kfj28z3tk7D" allowfullscreen></iframe>
+                <h5 class="mt-3">Positive Thinking for Mental Well-Being</h5>
+                <p>The benefits of positive thinking and how to train your mind to face challenges with optimism.</p>
+            </div>
+
+             <div class="col-lg-4 col-md-6 video-item" data-title="Mindfulness for Teens">
+                <iframe class="w-100" height="215" src="https://www.youtube.com/embed/fNNUIhxMLd8?si=GbqCSylj7z9GK7K_" allowfullscreen></iframe>
+                <h5 class="mt-3">Mindfulness for Teens</h5>
+                <p>A simple mindfulness technique designed specifically for teens.</p>
+            </div>
+        </div>
+        <div id="noResults" class="no-results">No videos found.</div>
+    </div>
+
+        
+ </div>
+        
+            
+           
+           
+</div>
+
+
+
+
+        </div>
+    </div>
+</div>
+<!-- Mental Health Videos End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Testimonial</h5>
+                <h1 class="display-4">Patients Say About Our Services</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle mx-auto" src="img/2.png" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
+                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-4 fw-normal">Artikel-artikel di MindEase sangat informatif dan mudah dipahami. Ditambah dengan videonya yang inspiratif, saya merasa lebih sadar akan pentingnya menjaga kesehatan mental.</p>
+                            <hr class="w-25 mx-auto">
+                            <h3>Annisa</h3>
+                            <h6 class="fw-normal text-primary mb-3">PNS</h6>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle mx-auto" src="img/3.png" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
+                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-4 fw-normal">MindEase adalah platform yang luar biasa! Videonya membantu saya memahami isu-isu mental health, dan artikelnya memberikan wawasan mendalam. Sangat bermanfaat untuk generasi muda seperti saya.</p>
+                            <hr class="w-25 mx-auto">
+                            <h3>Aulia</h3>
+                            <h6 class="fw-normal text-primary mb-3">Desainer Ternama</h6>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle mx-auto" src="img/4.png" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
+                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-4 fw-normal">Kombinasi video edukatif dan artikel yang MindEase tawarkan benar-benar membantu saya belajar cara menghadapi stres dan emosi sehari-hari. Platform ini seperti teman baik yang selalu ada.</p>
+                            <hr class="w-25 mx-auto">
+                            <h3>Rahma</h3>
+                            <h6 class="fw-normal text-primary mb-3">CEO</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+<div class="container-fluid bg-dark text-light border-top border-secondary py-4">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-12 text-center">
+                <p class="mb-md-0">&copy; <a class="text-primary" href="#">2024 MindEase Corp.</a></p> 
+                <a> All rights reserved.</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+<script>
+        // Elements
+        const searchBar = document.getElementById('searchBar');
+        const videos = document.querySelectorAll('.video-item');
+        const noResults = document.getElementById('noResults');
+
+        // Search Function
+        searchBar.addEventListener('input', function () {
+            const query = searchBar.value.toLowerCase();
+            let found = false;
+
+            videos.forEach(video => {
+                const title = video.getAttribute('data-title').toLowerCase();
+                if (title.includes(query)) {
+                    video.style.display = ''; // Show matching videos
+                    found = true;
+                } else {
+                    video.style.display = 'none'; // Hide non-matching videos
+                }
+            });
+
+            // Show "No Results" message if no videos match
+            noResults.style.display = found ? 'none' : 'block';
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</body>
+
+</html>
